@@ -25,7 +25,7 @@ import reactor.core.publisher.Mono;
 
 @Api(tags = "Customer API")
 @Slf4j
-//@RefreshScope
+@RefreshScope
 @RestController
 @RequestMapping("/customer")
 public class CustomerController {

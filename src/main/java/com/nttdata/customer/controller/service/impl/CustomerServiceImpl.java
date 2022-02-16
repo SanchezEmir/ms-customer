@@ -1,6 +1,7 @@
 package com.nttdata.customer.controller.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.circuitbreaker.resilience4j.ReactiveResilience4JCircuitBreakerFactory;
 import org.springframework.cloud.client.circuitbreaker.ReactiveCircuitBreaker;
 import org.springframework.http.MediaType;
@@ -22,8 +23,9 @@ public class CustomerServiceImpl implements ICustomerService {
 
   private final WebClient webClient;
   private final ReactiveCircuitBreaker reactiveCircuitBreaker;
-
-  private final String urlTypecustomer = "http://localhost:8090/api/v1/profile/typecustomer/find/{id}";
+  
+  @Value("${config.base.typecustomer}")
+  private String urlTypecustomer;
   // private final String urlTypecustomer =
   // "http://api-gateway:8090/api/profile/typecustomer/find/{id} ";
 
@@ -84,7 +86,7 @@ public class CustomerServiceImpl implements ICustomerService {
 
   @Override
   public Mono<TypeCustomer> findTypeCustomer(String id) {
-    log.info("Buscando typeCustomer");
+    log.info("Buscando typeCustomer...");
     return reactiveCircuitBreaker.run(webClient.get().uri(this.urlTypecustomer, id)
         .accept(MediaType.APPLICATION_JSON)
         .retrieve().bodyToMono(TypeCustomer.class),
