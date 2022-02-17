@@ -1,4 +1,4 @@
-package com.nttdata.customer.controller.service.impl;
+package com.nttdata.customer.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -8,10 +8,10 @@ import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
-import com.nttdata.customer.controller.dto.TypeCustomer;
-import com.nttdata.customer.controller.entity.Customer;
-import com.nttdata.customer.controller.repository.ICustomerRepository;
-import com.nttdata.customer.controller.service.ICustomerService;
+import com.nttdata.customer.dto.TypeCustomer;
+import com.nttdata.customer.entity.Customer;
+import com.nttdata.customer.repository.ICustomerRepository;
+import com.nttdata.customer.service.ICustomerService;
 
 import lombok.extern.slf4j.Slf4j;
 import reactor.core.publisher.Flux;

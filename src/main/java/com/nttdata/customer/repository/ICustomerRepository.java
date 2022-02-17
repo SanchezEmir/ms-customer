@@ -1,8 +1,8 @@
-package com.nttdata.customer.controller.repository;
+package com.nttdata.customer.repository;
 
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 
-import com.nttdata.customer.controller.entity.Customer;
+import com.nttdata.customer.entity.Customer;
 
 import reactor.core.publisher.Flux;
 

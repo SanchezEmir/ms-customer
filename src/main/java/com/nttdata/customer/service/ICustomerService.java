@@ -1,7 +1,7 @@
-package com.nttdata.customer.controller.service;
+package com.nttdata.customer.service;
 
-import com.nttdata.customer.controller.dto.TypeCustomer;
-import com.nttdata.customer.controller.entity.Customer;
+import com.nttdata.customer.dto.TypeCustomer;
+import com.nttdata.customer.entity.Customer;
 
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;

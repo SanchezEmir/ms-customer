@@ -1,4 +1,4 @@
-package com.nttdata.customer.controller.entity;
+package com.nttdata.customer.entity;
 
 import java.util.Date;
 
@@ -6,8 +6,8 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.format.annotation.DateTimeFormat;
 
-import com.nttdata.customer.controller.dto.TypeCustomer;
-import com.nttdata.customer.controller.entity.enums.EDocumentType;
+import com.nttdata.customer.dto.TypeCustomer;
+import com.nttdata.customer.entity.enums.EDocumentType;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

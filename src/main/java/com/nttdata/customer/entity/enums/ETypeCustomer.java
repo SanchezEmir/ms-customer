@@ -1,4 +1,4 @@
-package com.nttdata.customer.controller.entity.enums;
+package com.nttdata.customer.entity.enums;
 
 public enum ETypeCustomer {
   

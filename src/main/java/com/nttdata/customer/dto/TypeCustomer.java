@@ -1,6 +1,6 @@
-package com.nttdata.customer.controller.dto;
+package com.nttdata.customer.dto;
 
-import com.nttdata.customer.controller.entity.enums.ETypeCustomer;
+import com.nttdata.customer.entity.enums.ETypeCustomer;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

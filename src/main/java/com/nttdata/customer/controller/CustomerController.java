@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.nttdata.customer.controller.entity.Customer;
-import com.nttdata.customer.controller.service.ICustomerService;
+import com.nttdata.customer.entity.Customer;
+import com.nttdata.customer.service.ICustomerService;
 
 import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
